@@ -2,7 +2,7 @@ const userData = {
   githubUsername: "justinkpeter",
   name: "Justin Peter",
   designation: "Full-Stack Developer",
-  avatarUrl: "/avatar.png",
+  avatarUrl: "/avatar.jpg",
   email: "justinkmpeter@gmail.com",
   phone: "+1 (850) 687-7752",
   address: "Dallas, Texas",
