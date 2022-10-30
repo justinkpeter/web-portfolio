@@ -1,11 +1,11 @@
 const userData = {
-  githubUsername: "manuarora700",
-  name: "Manu Arora",
+  githubUsername: "justinkpeter",
+  name: "Justin Peter",
   designation: "Full-Stack Developer",
   avatarUrl: "/avatar.png",
-  email: "manuarorawork@gmail.com",
-  phone: "+91 9587738861",
-  address: "Jaipur, Rajasthan, India.",
+  email: "justinkmpeter@gmail.com",
+  phone: "+1 (850) 687-7752",
+  address: "Dallas, Texas",
   projects: [
     {
       title: "Tailwind Master Kit",
@@ -106,10 +106,10 @@ const userData = {
   resumeUrl:
     "https://drive.google.com/file/d/1xmE3BOmgM7TAOOgVp36xQIQvYDntDYoo/view?usp=sharing",
   socialLinks: {
-    instagram: "https://instagram.com/maninthere",
+    instagram: "https://instagram.com/justincrediblemoments",
     twitter: "https://twitter.com/mannupaaji",
-    linkedin: "https://linkedin.com/in/manuarora28",
-    github: "https://github.com/manuarora700",
+    linkedin: "https://linkedin.com/in/justinkmpeter",
+    github: "https://github.com/justinkpeter",
     facebook: "https://facebook.com/",
   },
 };
