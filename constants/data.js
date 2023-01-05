@@ -52,14 +52,19 @@ const userData = {
     title:
       "I'm a software developer that loves building products and web applications that impact millions of lives",
     description: [
-      `I've been developing full-stack applications since I was 20 years old. The emergence of COVID-19 really emphasized my desire for creating web applications with great UX.`,
-      `After learning HTML and struggling with CSS, I came up with a brilliant idea of using bootstrap so that I don't have to style everything by myself and - for obvious reasons - if you knew bootstrap, you were cool.`,
-      `But now, I'm a legend. I've been coding in React, Angular, Vue, Svelte, Node.js, Express, MongoDB, MySQL, Bootstrap, and Tailwind`,
-    ],
+      `I've been developing full-stack applications since I was 20 years old. The emergence of COVID-19 really emphasized my desire for creating web applications with great UX.`
+      ],
     currentProject: "Tailwind Master Kit",
     currentProjectUrl: "https://tailwindmasterkit.com",
   },
   experience: [
+    {
+      title: "Front End Developer",
+      company: "Spenser",
+      year: "2022",
+      companyLink: "https://www.spenser.app/",
+      desc: "Doing some freelance work on the Front End to assist in getting this company up and off the ground.",
+    },
     {
       title: "Programmer II",
       company: "TriTech Software & Services",
@@ -83,7 +88,7 @@ const userData = {
     },
   ],
   resumeUrl:
-    "https://drive.google.com/file/d/1BcMw6KzM4OTveFB4g76Cv5ivZXiIudaC/view?usp=share_link",
+    "https://drive.google.com/file/d/1MMS9ny7BLyCyetKc0ATZYZnlyX_bMfY8/view?usp=share_link",
   socialLinks: {
     instagram: "https://instagram.com/justincrediblemoments",
     twitter: "https://twitter.com/_justinpeter",

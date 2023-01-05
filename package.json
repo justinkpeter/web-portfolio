@@ -1,5 +1,6 @@
 {
   "name": "nextjs",
+  "homepage": "http://www.justinpeter.dev",
   "version": "0.1.0",
   "private": true,
   "scripts": {
