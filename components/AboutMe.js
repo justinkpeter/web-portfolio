@@ -34,7 +34,7 @@ export default function AboutMe() {
                 Contact
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                For any sort help / enquiry, shoot a{" "}
+                For any sort help / inquiry, shoot a{" "}
                 <a
                   href={`mailto:${userData.email}`}
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
@@ -143,54 +143,60 @@ export default function AboutMe() {
               Tech Stack
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
+              {userData.technologies.map((tech, idx) => (
+                  <div key={idx} className={'bg-yellow-200/5 m-1 p-2 flex rounded-lg '}>
+                    <img src={tech.imageUrl} alt={tech.name} className={"w-6 h-6 rounded-sm ml-1"}/>
+                    <h3 className={'mx-2'}> {tech.name}</h3>
+                  </div>
+              ))}
+              {/*<img*/}
+              {/*  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"*/}
+              {/*  className="h-20 w-20 mx-4 my-4"*/}
+              {/*/>*/}
+              {/*<img*/}
+              {/*  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"*/}
+              {/*  className="h-20 w-20 mx-4 my-4"*/}
+              {/*/>*/}
+              {/*<img*/}
+              {/*  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"*/}
+              {/*  className="h-20 w-20 mx-4 my-4"*/}
+              {/*/>*/}
+              {/*<img*/}
+              {/*  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"*/}
+              {/*  className="h-20 w-20 mx-4 my-4"*/}
+              {/*/>*/}
+              {/*<img*/}
+              {/*  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"*/}
+              {/*  className="h-20 w-20 mx-4 my-4"*/}
+              {/*/>*/}
+              {/*<img*/}
+              {/*  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"*/}
+              {/*  className="h-20 w-20 mx-4 my-4"*/}
+              {/*/>*/}
+              {/*<img*/}
+              {/*  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"*/}
+              {/*  className="h-20 w-20 mx-4 my-4"*/}
+              {/*/>*/}
+              {/*<img*/}
+              {/*  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"*/}
+              {/*  className="h-20 w-20 mx-4 my-4"*/}
+              {/*/>*/}
+              {/*<img*/}
+              {/*  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"*/}
+              {/*  className="h-20 w-20 mx-4 my-4"*/}
+              {/*/>*/}
+              {/*<img*/}
+              {/*  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"*/}
+              {/*  className="h-20 w-20 mx-4 my-4"*/}
+              {/*/>*/}
+              {/*<img*/}
+              {/*  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"*/}
+              {/*  className="h-20 w-20 mx-4 my-4"*/}
+              {/*/>*/}
+              {/*<img*/}
+              {/*  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"*/}
+              {/*  className="h-20 w-20 mx-4 my-4"*/}
+              {/*/>*/}
             </div>
           </div>
         </div>
